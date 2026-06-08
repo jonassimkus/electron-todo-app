@@ -3,9 +3,16 @@
   "version": "1.0.0",
   "description": "Test Application",
   "main": "main.js",
+  "build": {
+    "appId": "first-electron-app",
+    "win": {
+      "target": ["nsis", "portable"]
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dist": "electron-builder",
+    "build:win": "electron-builder --win",
     "start": "electron ."
   },
   "keywords": [],

@@ -10,11 +10,12 @@ if (!app.isPackaged) {
 
 function createWindow() {
   const win = new BrowserWindow({
+    minWidth: 300,
     width: 400,
+    minHeight: 400,
     height: 600,
     transparent: true,
     frame: false,
-    resizable: false,
     webPreferences: {
       preload: path.join(__dirname, "preload.js")
     }
