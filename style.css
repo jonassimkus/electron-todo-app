@@ -11,6 +11,7 @@
     --background-secondary: #73946f;
     --foreground: #fff4ea;
     --x-button: #ffaa8e;
+    --shadow: rgba(13, 71, 3, 0.3);
 
     background-color: var(--background);
     color: var(--foreground);
@@ -22,15 +23,38 @@ body.baddie-theme{
     --background: #443844;
     --background-secondary: #322932;
     --foreground: #ee97f4;
+    --shadow: rgba(23, 1, 28, 0.3);
 
     background-color: var(--background);
     color: var(--foreground);
 }
 
+body.barbie-theme{
+    --background: #ff9fff;
+    --background-secondary: #ef86ef;
+    --foreground: #fee9ff;
+    --shadow: rgba(202, 14, 249, 0.3);
+
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+body.cafe-theme{
+    --background: #faedcd;
+    --background-secondary: #fefae0;
+    --foreground: #b08968;
+    --shadow: #b0886842;
+
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+
 body.nord-theme{
     --background: #131619;
     --background-secondary: #0f1112;
     --foreground: #fcfeff;
+    --shadow: rgba(0, 0, 0, 0.3);
 
     background-color: var(--background);
     color: var(--foreground);
@@ -63,7 +87,7 @@ header{
 }
 
 header h1{
-    text-shadow: 0px 3px 4px black;
+    text-shadow: 0px 3px 4px var(--shadow);
 }
 
 header button{
@@ -101,8 +125,8 @@ input{
     padding: 8px;
     margin-right: 8px;
     margin-left: 8px;
-    box-shadow: 0px 4px 3px rgba(0,0,0,0.1);
-    text-shadow: 0px 1px 4px rgba(0,0,0,0.4);
+    box-shadow: 0px 4px 7px var(--shadow);
+    text-shadow: 0px 1px 4px var(--shadow);
 
     transition-property: transform;
     transition-duration: 0.25s;
@@ -142,7 +166,7 @@ main{
     border-radius: 8px;
     margin-bottom: 16px;
 
-    box-shadow: 0px 5px 3px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 7px var(--shadow);
 
     transition-property: transform;
     transition-duration: 0.25s;
@@ -155,7 +179,7 @@ main{
 #task p{
     margin-left: 8px;
     user-select: text;
-    text-shadow: 0px 1px 4px rgba(0,0,0,0.4);
+    text-shadow: 0px 1px 4px var(--shadow);
 
     min-width: 0;
     overflow-wrap: break-word;

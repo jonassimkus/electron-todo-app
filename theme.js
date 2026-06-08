@@ -10,6 +10,8 @@ theme_button.addEventListener("click", async () => {
     document.body.classList.remove('matcha-theme');
     document.body.classList.remove('nord-theme');
     document.body.classList.remove('baddie-theme');
+    document.body.classList.remove('barbie-theme');
+    document.body.classList.remove('cafe-theme');
 
  
     if (localStorage.getItem('theme') == "nord"){
@@ -19,6 +21,14 @@ theme_button.addEventListener("click", async () => {
     else if(localStorage.getItem('theme') == "matcha"){
         localStorage.setItem('theme', 'baddie');
         document.body.classList.toggle('baddie-theme');
+    }
+    else if(localStorage.getItem('theme') == "baddie"){
+        localStorage.setItem('theme', 'barbie');
+        document.body.classList.toggle('barbie-theme');
+    }
+    else if(localStorage.getItem('theme') == "barbie"){
+        localStorage.setItem('theme', 'cafe');
+        document.body.classList.toggle('cafe-theme');
     }
     else{
         localStorage.setItem('theme', 'nord');
