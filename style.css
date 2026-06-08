@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Adwaita Sans';
+  src: url('assets/AdwaitaSans-Regular.ttf') format('woff2'),
+      url('assets/AdwaitaSans-Italic.ttf') format('woff2');
+  font-weight: normal, bold;
+  font-style: normal, italic;
+}
+
+:root{
+    --background: #292929;
+    --foreground: #fff;
+
+    background-color: var(--background);
+    color: var(--foreground);
+
+    font-family: "Adwaita Sans";
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;  
+}
+
+h1{
+    margin-top: 10px;
+    text-align: center;
+}
+
+main{
+    margin: 10px;
+}
+
+footer {
+    margin-top: auto;
+    margin-bottom: 10px;
+
+    align-self: center;
+}

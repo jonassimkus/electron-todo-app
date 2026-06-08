@@ -1,0 +1,20 @@
+{
+  "name": "first-electron-app",
+  "version": "1.0.0",
+  "description": "Test Application",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "electron-builder",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Jonas Simkus",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^42.3.3",
+    "electron-builder": "^26.15.2",
+    "electron-reload": "^2.0.0-alpha.1"
+  }
+}
