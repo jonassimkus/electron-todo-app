@@ -7,8 +7,10 @@
 }
 
 :root{
-    --background: #292929;
-    --foreground: #fff;
+    --background: #8ba888;
+    --background-secondary: #73946f;
+    --foreground: #fff4ea;
+    --x-button: #ffaa8e;
 
     background-color: var(--background);
     color: var(--foreground);
@@ -19,27 +21,110 @@
 *{
     padding: 0;
     margin: 0;
+    user-select: none;
+    font-family: "Adwaita Sans";
+    font-weight: bold;
+    scrollbar-gutter: stable both-edges;
 }
 
-body{
+#wrapper{
     width: 100%;
-    min-height: 100vh; 
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;  
+    flex-direction: column; 
 }
 
 h1{
-    margin-top: 10px;
+    margin-top: 30px;
     text-align: center;
 }
 
-main{
-    margin: 10px;
-}
 
 footer {
     margin-top: auto;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 
+    display: flex;
     align-self: center;
+    justify-content: center;
+}
+
+button,
+input{
+    text-decoration: none;
+    background: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+
+    background-color: var(--foreground);
+    color: var(--background-secondary);
+    border-radius: 8px;
+    padding: 8px;
+    margin-right: 8px;
+    margin-left: 8px;
+
+    transition-property: transform;
+    transition-duration: 0.25s;
+}
+
+button:hover,
+input:hover{
+    transform: translateY(-2px);
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+input{
+    padding-left: 16px;
+    width: 50%;
+}
+
+#task-button{
+    width: 25%;
+}
+
+main{
+    margin: 25px;
+}
+
+#task{
+    display: flex;
+
+    font-size: 24px;
+    align-items: center;
+    overflow-wrap: break-word;
+
+    background-color: var(--background-secondary);
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+
+    transition-property: transform;
+    transition-duration: 0.25s;
+}
+
+#task:hover{
+    transform: translateY(-2px);
+}
+
+#task p{
+    margin-left: 8px;
+    user-select: text;
+
+    min-width: 0;
+    overflow-wrap: break-word;
+}
+
+#task button {
+    background: none;
+    color: var(--x-button);
+    padding-left: 16px;
+    font-size: 16px;
+    margin-left: auto;
+
+    transition-property: transform;
+    transition-duration: 0.25s;
 }
